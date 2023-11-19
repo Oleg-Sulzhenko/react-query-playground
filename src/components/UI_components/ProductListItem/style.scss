@@ -1,0 +1,23 @@
+ .inventory-list-item {
+  padding: 10px 15px;
+  border-radius: 4px;
+  font-size: 10pt;
+  font-weight: 300;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  color: #656565;
+  transition: all .3s ease;
+  border: #fff solid 1px;
+
+  &:hover {
+    background: #5c7fed;
+    color: #fff;
+  }
+
+  &[data-checked="true"] {
+    border: theme('colors.blue.400') solid 2px;
+    color: #656565;
+    background-color: transparent;
+  }
+}
